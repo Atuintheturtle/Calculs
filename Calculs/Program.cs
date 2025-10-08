@@ -16,7 +16,8 @@ namespace Calculs
             int reponse = 0; // saisie de la réponse de l'utilisateur
             string choix; // saisie du choix de l'utilsiateur
             bool correct; // mémorise si la saisie est un entier
-
+            val1 = rand.Next(1, 10);
+            val2 = rand.Next(1, 10);
             // boucle sur le menu
             choix = "1";
             while (choix != "0")
@@ -27,12 +28,12 @@ namespace Calculs
                 Console.WriteLine("Quitter ........................ 0");
                 Console.Write("Choix :                          ");
                 choix = Console.ReadLine();
+
                 // traitement des choix
                 switch (choix)
                 {
                     case "1": // addition
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
+
                         // saisie de la réponse
                         correct = false;
                         while (!correct)
@@ -60,8 +61,7 @@ namespace Calculs
                         }
                         break;
                     case "2": // multiplication
-                        val1 = rand.Next(1, 10);
-                        val2 = rand.Next(1, 10);
+
                         // saisie de la réponse
                         correct = false;
                         while (!correct)
